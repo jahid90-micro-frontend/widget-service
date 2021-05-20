@@ -11,41 +11,37 @@ app.use(bodyParser.json());
 const metadata = {
     'nav': {
         id: 'nav',
-        assets: {
-            scripts: [
-                '/nav/script.js'
-            ],
-            styles: [
-                '/nav/style.css'
-            ]
-        },
         content: {
             ssi: {
                 link: '/nav/fragment/nav'
             },
             csi: {
                 tag: 'mf-nav',
-                link: '/nav/component/nav'
+                link: '/nav/common/Nav.js'
+            }
+        }
+    },
+    'home': {
+        id: 'home',
+        content: {
+            ssi: {
+                link: '/home/fragment/home'
+            },
+            csi: {
+                tag: 'mf-home',
+                link: '/home/common/Home.js'
             }
         }
     },
     'footer': {
         id: 'footer',
-        assets: {
-            scripts: [
-                '/footer/script.js'
-            ],
-            styles: [
-                '/footer/style.css'
-            ]
-        },
         content: {
             ssi: {
                 link: '/footer/fragment/footer'
             },
             csi: {
                 tag: 'mf-footer',
-                link: '/footer/component/footer'
+                link: '/footer/common/Footer.js'
             }
         }
     }
