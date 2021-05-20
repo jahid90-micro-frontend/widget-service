@@ -8,25 +8,29 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.post('/', (req, res) => {
-    
-    res.json({
-        widget: {
-            id: req.body.widgetId,
-            assets: [
-                '/nav/script.js',
-                '/nav/style.css'
-            ],
-            content: {
-                ssi: {
-                    link: '/nav/fragment/nav'
-                },
-                client: {
-                    tag: 'mf-nav',
-                    link: '/nav/component/nav'
-                }
+const metadata = {
+    'nav': {
+        id: 'nav',
+        assets: [
+            '/nav/script.js',
+            '/nav/style.css'
+        ],
+        content: {
+            ssi: {
+                link: '/nav/fragment/nav'
+            },
+            client: {
+                tag: 'mf-nav',
+                link: '/nav/component/nav'
             }
         }
+    }
+};
+
+app.post('/', (req, res) => {
+
+    res.json({
+        widget: metadata[req.body.widgetId]
     });
 
 });
@@ -36,4 +40,3 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`server is up and running at port: ${port}`);
 });
-
