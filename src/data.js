@@ -59,6 +59,18 @@ module.exports = {
                     link: '/w/about/common/About.js'
                 }
             }
+        },
+        'counter': {
+            id: 'counter',
+            content: {
+                ssi: {
+                    link: '/w/counter/fragment/counter/'
+                },
+                csi: {
+                    tag: 'mf-counter',
+                    link: '/w/counter/common/Counter.js'
+                }
+            }
         }
     }
 };
