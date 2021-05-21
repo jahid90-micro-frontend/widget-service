@@ -24,6 +24,18 @@ module.exports = {
                 }
             }
         },
+        'not-found': {
+            id: 'not-found',
+            content: {
+                ssi: {
+                    link: '/w/not-found/fragment/not-found'
+                },
+                csi: {
+                    tag: 'mf-not-found',
+                    link: '/w/not-found/common/NotFound.js'
+                }
+            }
+        },
         'home': {
             id: 'home',
             content: {
