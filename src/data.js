@@ -71,6 +71,18 @@ module.exports = {
                     link: '/w/counter/common/Counter.js'
                 }
             }
+        },
+        'todos': {
+            id: 'todos',
+            content: {
+                ssi: {
+                    link: '/w/todos/'
+                },
+                csi: {
+                    tag: 'mf-todos',
+                    link: '/w/todos/common/Counter.js'
+                }
+            }
         }
     }
 };
