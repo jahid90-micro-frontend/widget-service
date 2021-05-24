@@ -2,87 +2,31 @@ module.exports = {
     metadata: {
         'nav': {
             id: 'nav',
-            content: {
-                ssi: {
-                    link: '/w/nav/fragment/nav'
-                },
-                csi: {
-                    tag: 'mf-nav',
-                    link: '/w/nav/common/Nav.js'
-                }
-            }
+            content: '/w/nav/'
         },
         'footer': {
             id: 'footer',
-            content: {
-                ssi: {
-                    link: '/w/footer/fragment/footer'
-                },
-                csi: {
-                    tag: 'mf-footer',
-                    link: '/w/footer/common/Footer.js'
-                }
-            }
+            content: '/w/footer/'
         },
         'not-found': {
             id: 'not-found',
-            content: {
-                ssi: {
-                    link: '/w/not-found/fragment/not-found'
-                },
-                csi: {
-                    tag: 'mf-not-found',
-                    link: '/w/not-found/common/NotFound.js'
-                }
-            }
+            content: '/w/not-found/'
         },
         'home': {
             id: 'home',
-            content: {
-                ssi: {
-                    link: '/w/home/fragment/home'
-                },
-                csi: {
-                    tag: 'mf-home',
-                    link: '/w/home/common/Home.js'
-                }
-            }
+            content: '/w/home/'
         },
         'about': {
             id: 'about',
-            content: {
-                ssi: {
-                    link: '/w/about/fragment/about'
-                },
-                csi: {
-                    tag: 'mf-about',
-                    link: '/w/about/common/About.js'
-                }
-            }
+            content: '/w/about/'
         },
         'counter': {
             id: 'counter',
-            content: {
-                ssi: {
-                    link: '/w/counter/fragment/counter/'
-                },
-                csi: {
-                    tag: 'mf-counter',
-                    link: '/w/counter/common/Counter.js'
-                }
-            }
+            content: '/w/counter/'
         },
         'todos': {
             id: 'todos',
-            content: {
-                ssi: {
-                    link: '/w/todos/'
-                },
-                csi: {
-                    tag: 'mf-todos',
-                    link: '/w/todos/common/Counter.js'
-                }
-            }
+            content: 'w/todos/'
         }
     }
 };
