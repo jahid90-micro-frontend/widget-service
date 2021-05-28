@@ -27,6 +27,10 @@ module.exports = {
         'todos': {
             id: 'todos',
             content: 'w/todos/'
+        },
+        'minance': {
+            id: 'minance',
+            content: 'w/minance/'
         }
     }
 };
