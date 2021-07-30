@@ -2,35 +2,35 @@ module.exports = {
     metadata: {
         'nav': {
             id: 'nav',
-            content: '/w/nav/'
+            content: 'widgets/nav.html'
         },
         'footer': {
             id: 'footer',
-            content: '/w/footer/'
+            content: 'widgets/footer.html'
         },
         'not-found': {
             id: 'not-found',
-            content: '/w/not-found/'
+            content: 'widgets/not-found.html'
         },
         'home': {
             id: 'home',
-            content: '/w/home/'
+            content: 'widgets/home.html'
         },
         'about': {
             id: 'about',
-            content: '/w/about/'
+            content: 'widgets/about.html'
         },
         'counter': {
             id: 'counter',
-            content: '/w/counter/'
+            content: 'widgets/counter/'
         },
         'todos': {
             id: 'todos',
-            content: '/w/todos/'
+            content: 'widgets/todos/'
         },
         'minance': {
             id: 'minance',
-            content: '/w/minance/'
+            content: 'widgets/minance/'
         }
     }
 };
