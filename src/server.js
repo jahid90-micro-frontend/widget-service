@@ -15,14 +15,15 @@ app.use(bodyParser.json());
 
 app.post('/', (req, res) => {
 
+    const response = metadata[req.body.widgetId];
+
+    console.log(`Request: {widgetId: ${req.body.widgetId}}`);
+    console.debug(`Response: ${JSON.stringify(response)}`)
+
     res.json({
-        widget: metadata[req.body.widgetId]
+        widget: response
     });
 
 });
 
-// Start the server
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-    console.log(`server is up and running at port: ${port}`);
-});
+module.exports = app;
