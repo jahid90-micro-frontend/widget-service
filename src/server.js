@@ -2,6 +2,8 @@ const bodyParser = require('body-parser');
 const express = require('express');
 const morgan = require('morgan');
 
+const { trace } = require('@jahiduls/lib-tracing');
+
 const { metadata } = require('./data.js');
 
 // Create the server
@@ -15,7 +17,7 @@ app.use(bodyParser.json());
 
 app.post('/', (req, res) => {
 
-    const response = metadata[req.body.widgetId];
+    const response = tracedFetchMetadata(req.body.widgetId);
 
     console.log(`Request: {widgetId: ${req.body.widgetId}}`);
     console.debug(`Response: ${JSON.stringify(response)}`)
@@ -25,5 +27,8 @@ app.post('/', (req, res) => {
     });
 
 });
+
+const fetchMetadata = (widgetId) => metadata[widgetId];
+const tracedFetchMetadata = trace(fetchMetadata, 'fetch-widget-metadata');
 
 module.exports = app;
