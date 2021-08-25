@@ -4,7 +4,7 @@ const morgan = require('morgan');
 
 const { trace } = require('@jahiduls/lib-tracing');
 
-const { metadata } = require('./data.js');
+const { metadata } = require('./config/data');
 
 // Create the server
 const app = express();
